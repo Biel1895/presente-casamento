@@ -1,7 +1,6 @@
 @import url("./assets/styles/login.css");
 @import url("./assets/styles/carta.css");
 @import url("./assets/styles/presentes.css");
-@import url("./assets/styles/thanks.css");
 
 :root {
     --cor-background-principal: #b89ab8;
@@ -23,7 +22,6 @@ body {
     background: linear-gradient(to bottom, var(--cor-background-principal), var(--cor-background-secundario));
     background-repeat: no-repeat;
     overflow: auto;
-
 }
 
 body::before {

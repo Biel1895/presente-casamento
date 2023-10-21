@@ -82,3 +82,10 @@
         transform: scale(1.10);
     }
 }
+
+@media (max-width: 350px) {
+    .botao__roxo-carta {
+        font-size: smaller;
+        padding: 7px 7px;
+    }
+}
