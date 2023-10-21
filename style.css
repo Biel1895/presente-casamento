@@ -1,0 +1,128 @@
+@import url("./assets/styles/login.css");
+@import url("./assets/styles/carta.css");
+@import url("./assets/styles/presentes.css");
+@import url("./assets/styles/thanks.css");
+
+:root {
+    --cor-background-principal: #b89ab8;
+    --cor-background-secundario: #cfcbce;
+    --cor-card-login-principal: rgba(255, 255, 255, 0.129);
+    --cor-card-login-secundario: rgba(255, 255, 255, 0.193);
+    --cor-sombras: rgba(0, 0, 0, 0.49);
+    --cor-fontes-botoes-principal: #55375f;
+    --cor-fontes-secundaria: #ffffff;
+    --cor-botao-secundario: rgba(216, 214, 214, 0.312);
+    --cor-detalhes-botoes: #d5286d;
+    --cor-preto: #000000;
+    --sem-cor: rgba(255, 255, 255, 0);
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, var(--cor-background-principal), var(--cor-background-secundario));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
+
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background-image: url('./assets/img/linear.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    bottom: 70px;
+    left: 55%;
+    width: 40%;
+    height: 95%;
+    background-image: url('./assets/img/coração.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: -1;
+}
+
+@media screen and (max-width: 991.98px) {
+    body::before {
+        height: 35%;
+    }
+
+    body::after {
+        position: fixed;
+        left: 52%;
+        width: 44%;
+        height: 120%;
+    }
+
+    .card-home {
+        min-width: 340px;
+        max-width: 380px;
+    }
+
+    @media (max-width: 350px) {
+        .card-home {
+            min-width: 250px;
+        }
+    }
+
+    .lado__esquerdo {
+        background-color: var(--sem-cor);
+        width: 100%;
+    }
+
+    .lado__direito {
+        width: 100%;
+        padding-bottom: 20px;
+        margin-top: -90px;
+    }
+
+    .d__h1 {
+        font-weight: 600;
+        margin-top: 0px;
+    }
+
+    .botao__branco {
+        margin-top: 20px;
+    }
+
+    .text__ou {
+        font-size: 1.25rem;
+        color: var(--cor-fontes-botoes-principal);
+    }
+
+    .login {
+        width: 100%;
+    }
+
+    .d__h3 {
+        font-size: 1.75rem;
+    }
+
+    .gatinhos, .rir {
+        width: 55%;
+    }
+
+    .card-carta {
+        width: 100%;
+    }
+
+    .card__thanks {
+        width: 100%;
+    }
+
+    .caixa-presente {
+        width: 250px;
+    }
+}

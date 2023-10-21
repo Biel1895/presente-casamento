@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/coração.png" type="image/x-icon">
+    <title>Presentes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex justify-content-center">
+                    <h1 class="fw-bolder pt-5 mb-3 mb-lg-0 text-center text__escolha">
+                        Abra os presentes!
+                    </h1>
+                </div>
+
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center mt-5">
+
+                    <div class="mb-3"><img class="caixa-presente me-lg-5" id="caixa1" onclick="abrirCard1()"
+                            src="../img/caixa-presente-1.png" alt="caixa de presente"></div>
+
+                    <div class="d-none card card-presentes me-lg-5 mb-5 mb-lg-0 rounded-5" id="card1"
+                        style="width: 18rem;">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../img/paris.png" class="card-img-top img__presentes" alt="torre Eiffel">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/agua.png" class="card-img-top img__presentes" alt="águas claras">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/baloes.png" class="card-img-top img__presentes"
+                                        alt="balões no céu">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <h5 class="card-title">Uma Viagem</h5>
+                                <p class="card-text">Um dos meus desejos é poder te levar em vários lugar
+                                    do mundo, por isso coloquei como meta para daqui a 5 anos, viajar a qualquer lugar
+                                    que
+                                    você
+                                    quiser do mundo.</p>
+                            </div>
+                            <div class="position-absolute bottom-0 me-3 mb-3">
+                                <label class="fw-bold" for="viagem">Escolha o nosso destino</label>
+                                <input type="text" id="viagem" class="rounded-4" placeholder="Nome do lugar">
+                                <i class="d-none bi bi-exclamation-triangle-fill text-danger" id="erroIcon1"></i>
+                                <div class="form__buttons text-end mt-2">
+                                    <button onclick="adicionarViagem()" type="button"
+                                        class="button-adicionar rounded-5">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3"><img class="caixa-presente mt-5 mt-lg-0 me-lg-5" id="caixa2"
+                            onclick="abrirCard2()" src="../img/caixa-presente-2.png" alt="caixa de presente"></div>
+
+                    <div class="d-none card card-presentes me-lg-5 mb-5 mb-lg-0 rounded-5" id="card2"
+                        style="width: 18rem;">
+                        <img src="../img/restaurante.png" class="card-img-top img__presentes" alt="restaurante">
+                        <div class="card-body">
+                            <h5 class="card-title">Um jantar</h5>
+                            <p class="card-text">Meu amor, uma das coisas que eu amo em você é esse seu lado cozinheira
+                                e
+                                que sempre quer fazer tudo que eu gosto, mas hoje será diferente, vamos em um lugar
+                                especial, da sua preferência.</p>
+                            <div class="position-absolute bottom-0 me-3 mb-3">
+                                <label class="fw-bold" for="restaurante">Onde você quer ir?</label>
+                                <input type="text" id="restaurante" class="rounded-4" placeholder="Nome do restaurante">
+                                <i class="d-none bi bi-exclamation-triangle-fill text-danger" id="erroIcon2"></i>
+                                <div class="form__buttons text-end mt-2">
+                                    <button onclick="adicionarRestaurante()" type="button"
+                                        class="button-adicionar rounded-5">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3"><img class="caixa-presente mt-5 mt-lg-0" id="caixa3" onclick="abrirCard3()"
+                            src="../img/caixa-presente-3.png" alt="caixa de presente">
+                    </div>
+
+                    <div class="d-none card card-presentes rounded-5" id="card3" style="width: 18rem;">
+                        <img src="../img/cinema.png" class="card-img-top img__presentes" alt="cinema">
+                        <div class="card-body">
+                            <h5 class="card-title">Sessão cinema</h5>
+                            <p class="card-text">Sei que amamos assistir filmes e séries juntinhos, por iremos vamos
+                                fazer
+                                uma sessão cineminha, com aquela pipoquinha que eu faço e você ama. Escolha o filme e
+                                vamos
+                                aproveitar!</p>
+                            <div class="position-absolute bottom-0 me-3 mb-3">
+                                <label class="fw-bold" for="cinema">Qual filme iremos assistir?</label>
+                                <input type="text" id="cinema" class="rounded-4" placeholder="Nome do filme">
+                                <i class="d-none bi bi-exclamation-triangle-fill text-danger" id="erroIcon3"></i>
+                                <div class="form__buttons text-end mt-2">
+                                    <button onclick="adicionarCinema()" type="button"
+                                        class="button-adicionar rounded-5">Adicionar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-5 mb-3">
+                    <form action="https://formsubmit.co/devbiel1895@gmail.com"
+                        class="form-respostas d-flex flex-column align-items-center justify-content-center"
+                        method="post">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5504/assets/pages/thanks.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <textarea class="respostas-add" name="message" id="message" cols="40" rows="2"
+                            required></textarea>
+                        <button type="submit" class="botao-respostas mx-0">
+                            <div class="faixa"></div>
+                            <div class="texto">
+                                <p>Enviar minhas respostas</p>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../js/presentes.js"></script>
+    <script src="../js/add-escolhas.js"></script>
+</body>
+
+</html>

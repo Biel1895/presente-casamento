@@ -1,0 +1,84 @@
+.card-carta {
+    width: 55%;
+    border: 0px;
+    background-color: var(--cor-card-login-principal);
+    backdrop-filter: blur(80px);
+    box-shadow: 0px 5px 20px var(--cor-sombras);
+}
+
+.lado {
+    background-color: var(--cor-card-login-secundario);
+    height: auto;
+    border-radius: 1rem;
+}
+
+.h__carta {
+    opacity: 0;
+    animation: cima 1s ease-in-out forwards;
+}
+
+.p__carta {
+    text-align: justify;
+    opacity: 0;
+    animation: cima 1.5s ease-in-out forwards;
+}
+
+.p__dois {
+    animation: cima 2s ease-in-out forwards;
+}
+
+.p__tres {
+    animation: cima 2.5s ease-in-out forwards;
+}
+
+.p__quatro {
+    animation: cima 3s ease-in-out forwards;
+}
+
+.p__cinco {
+    animation: cima 3.5s ease-in-out forwards;
+}
+
+.p__seis {
+    animation: cima 4s ease-in-out forwards;
+}
+
+.p__sete {
+    animation: cima 4.5s ease-in-out forwards;
+}
+
+@keyframes cima {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.botao__roxo-carta {
+    margin: 0px 10px 20px 0px;
+    border: 0;
+    padding: 7px 10px;
+    background-color: var(--cor-fontes-botoes-principal);
+    box-shadow: 0px 5px 20px var(--cor-sombras);
+    animation: anima 1s ease-in-out infinite alternate;
+}
+
+.botao__roxo-carta a {
+    text-decoration: none;
+    color: var(--cor-fontes-secundaria);
+}
+
+@keyframes anima {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.10);
+    }
+}

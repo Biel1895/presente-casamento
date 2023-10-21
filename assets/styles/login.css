@@ -1,0 +1,213 @@
+.position__card {
+    height: 100vh;
+}
+
+.card-home {
+    width: 59%;
+    border: 0px;
+    background-color: var(--cor-card-login-principal);
+    backdrop-filter: blur(80px);
+    box-shadow: 3px 3px 10px 10px var(--cor-sombras);
+}
+
+.lado__esquerdo {
+    background-color: var(--cor-card-login-secundario);
+    width: 32%;
+    padding-bottom: 20px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.lado__direito {
+    width: 68%;
+}
+
+.d__h1 {
+    font-weight: 400;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.d__h2 {
+    font-size: 2rem;
+}
+
+.d__h1, .d__h2 {
+    color: var(--cor-fontes-botoes-principal);
+}
+
+.sublinhado {
+    position: relative;
+}
+
+.sublinhado::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 3.5px;
+    background-color: var(--cor-fontes-botoes-principal);
+}
+
+.botao__branco {
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: var(--cor-botao-secundario);
+    color: var(--cor-fontes-botoes-principal);
+    font-size: 1rem;
+    box-shadow: 0px 5px 20px var(--cor-sombras);
+    transition: all .4s ease-in-out;
+}
+
+.botao__branco:hover {
+    background-color: var(--cor-fontes-botoes-principal);
+    color: var(--cor-fontes-secundaria);
+}
+
+.contatos {
+    list-style: none;
+}
+
+.login {
+    width: 65%;
+}
+
+.d__h3 {
+    color: var(--cor-fontes-botoes-principal);
+    margin-top: 65px;
+    font-size: 2rem;
+}
+
+.nao__cadastrado {
+    height: 1px;
+    width: 100%;
+    font-size: 0.75rem;
+    color: #ff0000;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.nao__cadastrado a {
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: 700;
+}
+
+.nao__cadastrado a:hover {
+    text-decoration: underline;
+}
+
+.linha {
+    display: inline-block;
+    width: 20%;
+    height: 0.5px;
+    background-color: var(--cor-fontes-botoes-principal);
+    margin: 0 10px 8px 10px;
+}
+
+.botao__roxo {
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 8px 40px;
+    background-color: var(--cor-fontes-botoes-principal);
+    color: var(--cor-fontes-secundaria);
+    font-size: 1rem;
+    box-shadow: 0px 5px 20px var(--cor-sombras);
+    transition: all .4s ease-in-out;
+}
+
+.botao__roxo:hover {
+    background-color: var(--cor-detalhes-botoes);
+    color: var(--cor-fontes-secundaria);
+}
+
+.label-float input[type="text"] {
+    width: 270px;
+    padding: 19px 20px 7px 20px;
+    box-shadow: 0px 5px 20px var(--cor-sombras);
+    border-radius: 30px;
+    border: 0;
+    background-color: var(--cor-card-login-principal);
+    background-color: transparent;
+    transition: all .5s ease-out;
+
+}
+
+.label-float input[type="password"] {
+    width: 270px;
+    padding: 19px 20px 7px 20px;
+    box-shadow: 0px 5px 20px var(--cor-sombras);
+    border-radius: 30px;
+    border: 0;
+    background-color: var(--cor-card-login-principal);
+    transition: all .5s ease-out;
+}
+
+.label-float input[type="text"]:focus,
+.label-float input[type="password"]:focus {
+    background-color: var(--cor-card-login-secundario);
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float label {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 25px;
+    margin-left: 19px;
+}
+
+.label-float input[type="text"]:focus+label,
+.label-float input[type="text"]:valid+label {
+    font-size: 0.8125rem;
+    margin-top: 15px;
+}
+
+.label-float input[type="password"]:focus+label,
+.label-float input[type="password"]:valid+label {
+    font-size: 0.8125rem;
+    margin-top: 15px;
+}
+
+.label-float input[type="text"]:checked,
+.label-float input[type="password"]:checked {
+    background-color: var(--cor-card-login-secundario);
+}
+
+.person__posicao {
+    font-size: 1.625rem;
+    position: absolute;
+    right: 12px;
+    top: 18px;
+}
+
+.senha-olho {
+    position: absolute;
+    top: 22px;
+    right: 14px;
+    font-size: 1.375rem;
+    cursor: pointer;
+}
+
+.esqueci {
+    text-decoration: none;
+    color: var(--cor-preto);
+    font-size: 0.875rem;
+}
+
+.gatinhos {
+    width: 37.5%;
+}
+
+.rir {
+    width: 60%;
+}

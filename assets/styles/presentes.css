@@ -1,0 +1,156 @@
+.text__escolha {
+    font-size: 2.25rem;
+    color: var(--cor-fontes-botoes-principal);
+}
+
+.card-presentes {
+    height: 475px;
+    border: 0px;
+    background-color: var(--cor-card-login-principal);
+    backdrop-filter: blur(80px);
+    box-shadow: 0px 5px 20px var(--cor-sombras);
+}
+
+.img__presentes {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+input[type="text"] {
+    border: 0px;
+    width: 100%;
+    background-color: var(--cor-botao-secundario);
+    box-shadow: 0px 5px 20px var(--cor-sombras);
+    outline: none;
+}
+
+.button-adicionar {
+    border: 0;
+    padding: 7px 10px;
+    color: var(--cor-fontes-secundaria);
+    font-size: 0.875rem;
+    background-color: var(--cor-fontes-botoes-principal);
+    box-shadow: 0px 5px 20px var(--cor-sombras);
+}
+
+.button-adicionar:hover {
+    background-color: var(--cor-detalhes-botoes);
+    color: var(--cor-fontes-secundaria);
+}
+
+.bi-exclamation-triangle-fill {
+    position: absolute;
+    right: 11px;
+    top: 25.5px;
+}
+
+.respostas-add {
+    text-align: center;
+    resize: none;
+    outline: none;
+    cursor: default;
+    pointer-events: none;
+    border-radius: 2rem;
+    background-color: var(--cor-botao-secundario);
+    box-shadow: 0px 5px 20px var(--cor-sombras);
+    border: 0;
+    color: var(--cor-preto);
+}
+
+.botao-respostas {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fontes-secundaria);
+    box-shadow: 0px 5px 20px var(--cor-sombras);
+    width: 100%;
+    height: 50px;
+    max-height: 80px;
+    max-width: 210px;
+    padding: 4px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: all 0.5s;
+}
+
+.botao-respostas:hover {
+    background-color: var(--cor-fontes-botoes-principal);
+    box-shadow: 0px 5px 20px var(--cor-sombras);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.botao-respostas .faixa {
+    width: 20px;
+    height: 700px;
+    background-color: var(--cor-fontes-botoes-principal);
+    position: absolute;
+    animation: faixaGirando 4s linear infinite;
+    transition: all 0.3s;
+}
+
+.botao-respostas:hover .faixa {
+    background-color: var(--cor-fontes-secundaria);
+}
+
+.botao-respostas .texto {
+    background-color: var(--cor-fontes-botoes-principal);
+    padding: 3px;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+.botao-respostas:hover .texto {
+    background-color: var(--cor-detalhes-botoes);
+}
+
+.botao-respostas .texto p {
+    margin-top: 6px;
+    color: var(--cor-fontes-secundaria);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+
+.botao-respostas:hover .texto p {
+    color: var(--cor-fontes-secundaria);
+}
+
+@keyframes faixaGirando {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.caixa-presente {
+    width: 370px;
+    cursor: pointer;
+    animation: anima 1s ease-in-out infinite alternate;
+}
+
+@keyframes anima {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.10);
+    }
+}
+
+@media (min-width: 992px) and (max-width:1275px) {
+    .caixa-presente {
+        width: 295px;
+    }
+}
