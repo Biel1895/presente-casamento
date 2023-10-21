@@ -145,6 +145,12 @@
     transition: all .5s ease-out;
 }
 
+@media (max-width: 350px) {
+    .label-float input[type="text"], .label-float input[type="password"] {
+        width: 200px;
+    }
+}
+
 .label-float input[type="text"]:focus,
 .label-float input[type="password"]:focus {
     background-color: var(--cor-card-login-secundario);
