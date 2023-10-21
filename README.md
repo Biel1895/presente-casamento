@@ -6,7 +6,7 @@
 
 Este site é um presente especial para Milena. Ele contém uma carta de amor e três presentes que ela irá descobrir. Para acessar o conteúdo, use as seguintes credenciais:
 
-- **Acesse o site:** [clicando aqui](URL_DO_SEU_SITE)
+- **Acesse o site:** [clicando aqui](https://presente-milena.vercel.app/index.html)
 - **Usuário:** Milena
 - **Senha:** 2210 (a data do nosso casamento: 22 de outubro)
 
