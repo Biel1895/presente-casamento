@@ -154,3 +154,9 @@ input[type="text"] {
         width: 295px;
     }
 }
+
+@media (max-width: 481px) {
+    .respostas-add {
+        width: 85%;
+    }
+}

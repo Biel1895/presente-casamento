@@ -22,7 +22,6 @@ body {
     height: auto;
     background: linear-gradient(to bottom, var(--cor-background-principal), var(--cor-background-secundario));
     background-repeat: no-repeat;
-    background-attachment: fixed;
     overflow: auto;
 
 }
