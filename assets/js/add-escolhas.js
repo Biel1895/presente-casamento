@@ -75,3 +75,14 @@ function adicionarCinema() {
     escolhaCinema.value = '';
 };
 
+document.getElementById('loginForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    let messageTextarea = document.getElementById('message');
+
+    if (messageTextarea.value.trim() === '') {
+        alert('Por favor, preencha os campos.');
+    } else {
+        messageTextarea.readOnly = true;
+        this.submit();
+    }
+});

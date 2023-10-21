@@ -27,8 +27,3 @@ function abrirCard3() {
         caixa3.classList.add('d-none');
     }
 }
-
-
-
-
-

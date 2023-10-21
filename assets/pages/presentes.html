@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mt-5 mb-3">
-                    <form action="https://formsubmit.co/devbiel1895@gmail.com"
+                    <form id="loginForm" action="https://formsubmit.co/devbiel1895@gmail.com"
                         class="form-respostas d-flex flex-column align-items-center justify-content-center"
                         method="post">
                         <input type="hidden" name="_next"
@@ -133,6 +133,7 @@
                         <input type="hidden" name="_captcha" value="false">
                         <textarea class="respostas-add" name="message" id="message" cols="40" rows="2" readonly
                             required></textarea>
+                        <i class="d-none bi bi-exclamation-triangle-fill text-danger" id="erroIcon4"></i>
                         <button type="submit" class="botao-respostas mx-0">
                             <div class="faixa"></div>
                             <div class="texto">
